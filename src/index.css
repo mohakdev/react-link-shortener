@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap');
+
+:root {
+  --color-bg: #3D3B3C;
+  --color-main-dark : #2a2829;
+  --color-secondary-dark : #181718;
+  --color-accent : #C33C54;
+}
+
+body{
+  font-family: 'Domine', serif;
+  background-color: var(--color-bg);
+}
+
+h1{
+  font-family: 'Rubik', sans-serif;
+  font-size: 60px;
+  color: white;
+}
+
+.App{
+  position:absolute;
+  top:200px;
+  bottom:0px;
+  right:100px;
+  left:100px;
+}
+/*Div Styles*/
+.input-div{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  margin: 30px;
+}
+.output-div{
+  margin: 30px;
+}
+/*Individual Styles*/
+.form-control{
+  margin-right: 5%;
+  color: white;
+  background-color: var(--color-main-dark);
+}
+.form-control:focus{
+  color: white;
+  background-color: var(--color-main-dark);
+}
+
+.btn-primary{
+  padding-left: 30px;
+  padding-right: 30px;
+  border: none;
+  --bs-btn-bg: var(--color-main-dark);
+  --bs-btn-hover-bg: var(--color-secondary-dark);
+  --bs-btn-active-bg: var(--color-secondary-dark);
+}
+
+.output-link {
+  border-style: dashed;
+  border-color: var(--color-main-dark);
+  padding: 6px;
+  margin-right: 60px;
+}
+
+/*Placeholder Style*/
+.input-div ::placeholder {
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+::-ms-input-placeholder { /* Edge 12 -18 */
+  color: white;
+}

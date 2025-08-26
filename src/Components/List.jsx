@@ -11,13 +11,17 @@ const List = ({ urls }) => {
                         <p>
                             <div>
                                 <strong className='url_txt'>Original: </strong>
-                                <a href={item.original} target="_blank" rel="noreferrer">
+                                <a href={item.original}>
                                     {item.original}
                                 </a>
                             </div>
                             <div>
                                 <strong className='url_txt'>Shortened: </strong>
-                                <a href={item.short} target="_blank" rel="noreferrer">
+                                <a href={
+                                    item.short.startsWith('http://') || item.short.startsWith('https://')
+                                        ? item.short
+                                        : `https://${item.short}`
+                                }>
                                     {item.short}
                                 </a>
                             </div>

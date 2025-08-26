@@ -3,51 +3,70 @@
 
 :root {
   --color-bg: #3D3B3C;
-  --color-main-dark : #2a2829;
-  --color-secondary-dark : #181718;
-  --color-accent : #C33C54;
+  --color-main-dark: #2a2829;
+  --color-secondary-dark: #181718;
+  --color-accent: #C33C54;
 }
 
-body{
+body {
   font-family: 'Domine', serif;
   background-color: var(--color-bg);
 }
 
-h1{
+h1 {
   font-family: 'Rubik', sans-serif;
   font-size: 60px;
   color: white;
 }
 
-.App{
-  position:absolute;
-  top:200px;
-  bottom:0px;
-  right:100px;
-  left:100px;
+.url_list {
+  font-family: 'Rubik', sans-serif;
+  font-size: 30px;
+  color: white;
 }
+
+.url_li {
+  border-top: 4px solid var(--color-main-dark);
+  margin: 0px;
+}
+
+.url_txt {
+  color: white;
+}
+
+.App {
+  position: absolute;
+  top: 200px;
+  bottom: 0px;
+  right: 100px;
+  left: 100px;
+}
+
 /*Div Styles*/
-.input-div{
+.input-div {
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   margin: 30px;
 }
-.output-div{
+
+.output-div {
   margin: 30px;
 }
+
 /*Individual Styles*/
-.form-control{
+.form-control {
   margin-right: 5%;
   color: white;
   background-color: var(--color-main-dark);
 }
-.form-control:focus{
+
+.form-control:focus {
   color: white;
   background-color: var(--color-main-dark);
 }
 
-.btn-primary{
+.btn-primary {
   padding-left: 30px;
   padding-right: 30px;
   border: none;
@@ -66,9 +85,11 @@ h1{
 /*Placeholder Style*/
 .input-div ::placeholder {
   color: white;
-  opacity: 1; /* Firefox */
+  opacity: 1;
+  /* Firefox */
 }
 
-::-ms-input-placeholder { /* Edge 12 -18 */
+::-ms-input-placeholder {
+  /* Edge 12 -18 */
   color: white;
 }

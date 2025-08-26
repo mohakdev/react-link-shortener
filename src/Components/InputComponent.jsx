@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useState } from 'react'
 
-const InputComponent = ({ setShortLink }) => {
+const InputComponent = ({ setShortLink, saveUrl }) => {
   const [textBoxValue, setTextBoxValue] = useState("");
   const apiKey = import.meta.env.VITE_REBRANDY_KEY;
 

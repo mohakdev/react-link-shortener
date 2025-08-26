@@ -1,7 +1,7 @@
 import './App.css'
 import OutputComponent from './Components/OutputComponent'
 import InputComponent from './Components/InputComponent'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import List from './Components/List';
 
 function App() {
@@ -19,6 +19,7 @@ function App() {
     const updated = [...urls, { original: originalUrl, short: shortenedUrl }]
     setUrls(updated)
     localStorage.setItem("urls", JSON.stringify(updated))
+    console.log("Saved to localStorage")
   }
 
   return (
